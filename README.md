@@ -1,0 +1,22 @@
+# Run Schema (static)
+
+Pure static web page for saving and running deep links (schema).
+
+## Features
+
+- Add schema URL + note (saved to LocalStorage)
+- List actions: Run / Copy / Delete / Clear
+- Quick Run: paste and Run, or Save to library
+- Import/Export: JSON via clipboard
+
+## Local use
+
+Open `index.html` directly.
+
+## Deploy to Vercel
+
+1. Import this repo into Vercel
+2. Framework Preset: **Other**
+3. Build Command: empty
+4. Output Directory: repository root
+
