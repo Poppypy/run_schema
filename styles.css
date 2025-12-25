@@ -188,6 +188,10 @@ body {
   overflow: hidden;
 }
 
+.cq {
+  container-type: inline-size;
+}
+
 .glass::before {
   content: "";
   position: absolute;
@@ -246,12 +250,15 @@ body {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 12px;
   }
-  .row.cols-3.quick-run {
+}
+
+@container (min-width: 640px) {
+  .cq .row.cols-3.quick-run {
     grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
     gap: 12px;
     align-items: end;
   }
-  .row.cols-3.quick-run .quick-actions {
+  .cq .row.cols-3.quick-run .quick-actions {
     grid-column: 1 / -1;
   }
 }
@@ -295,6 +302,8 @@ label {
 
 .field {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 14px 14px;
   border-radius: 18px;
   border: 0;
